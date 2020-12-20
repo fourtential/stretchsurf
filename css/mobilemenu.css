@@ -1,0 +1,88 @@
+/* Global Styles */
+
+* {
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+}
+
+/* Menu Controls */
+.menu-button {
+color:#fff;
+cursor:pointer;
+font-size:29px;
+padding:15px 24px;
+position:fixed;
+right:0;
+}
+
+.open-menu {
+color:#7fd0da;
+cursor:pointer;
+font-size:1rem;
+padding:1rem;
+position:absolute;
+right:0;
+top:0;
+transition:transform 250ms ease;
+}
+
+.rotate { transform:rotate(135deg); }
+
+
+/* Generated Overflow Element */
+
+.overflow {
+margin-top:57px;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+
+/* Menu Styles */
+
+#mobile-nav {
+background-color:#afe5ec;
+border-bottom: 1px solid rgba(0,0,0,.1);
+position:fixed;
+width:100%;
+}
+
+#mobile-nav ul {
+overflow: hidden;
+background-color:rgba(0,0,0,.05);
+display:none;
+margin:0 1rem;
+padding:0;
+position:relative;
+}
+
+#mobile-nav ul:first-child {
+background-color:transparent;
+}
+
+#mobile-nav ul li {
+border-top:1px solid rgba(255,255,255,.075);
+list-style:none;
+margin-bottom:0;
+position:relative;
+}
+
+#mobile-nav ul li a {
+color:#fff;
+display:inline-block;
+font-size:1.8rem;
+padding:1rem 0;
+text-decoration:none;
+width:100%;
+}
+
+#mobile-nav ul ul {
+margin:0;
+}
+
+#mobile-nav ul ul li {
+border-top:none;
+padding-left:1rem;
+}
+
+#mobile-nav ul ul li a{font-size: 1.5rem;}

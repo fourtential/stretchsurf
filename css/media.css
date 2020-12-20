@@ -1,0 +1,181 @@
+/*-------------------------미디어쿼리-----------------------*/
+
+/* 769~1280px */
+/*---------------------------------------------------------*/
+@charset "utf-8";
+@media screen and (max-width: 1280px) {
+#surfBoards .swiper-container{width: 90%; margin: 0 auto; height: 300px;}
+#surfBoards .board1280{display: none;}
+#surfBoards .board768{display: block;}
+    
+/*#mainVideo*/
+#mainVideo{width: 100%; height: auto;}
+#mainVideo .imgbox{display: none;}
+#mainVideo #videoBG{width: 100%;}
+#mainVideo .pauseBtn{left: 20px;}    
+
+/*about*/
+#about{height: 510px;}
+#about .aboutBox{width: 720px; height: 510px; padding: 0;}
+.aboutBox ul{width: 220px; margin-right: 30px;}
+.aboutBox ul li p{font-size: 1.1em;}
+.aboutBox ul .aboutImg{height: 240px;}
+.aboutBox ul .aboutImg a{display: block; height: 100%;}
+    
+    
+/*#boards*/
+#boards{height: 240px;}
+#boards ul{width: 740px; overflow: hidden; margin: 0 auto;}
+#boards ul li{margin-top: 120px; margin-right: 25px;}
+#boards ul li a{height: 60px;}
+#boards ul li a img{max-height: 50px;}
+#boards ul li a span{line-height: 50px;}
+    
+    
+/* #contents */
+.topContent{width: auto; height: auto; overflow: hidden; background: url(../images/bg/topCtbg.png) 0 0/cover no-repeat;}
+.topContent .video{width: 80%; float: none; margin-left: 10%; padding-top: 130px;}
+.topContent .video .videoBox{padding: 0;}
+.topContent .video .videoTitle{top: -50px; right: 40%;}
+    
+.topContent .customBoard{width: 40%; margin: 30px 0 20px 0;}
+.topContent .customBoard a p{font-size: 1.5em;}
+    
+.topContent .news .newsTitle{left: 30px;}
+.topContent .news>ul{margin-left: 80px;}
+.topContent .news>ul .newsBox .newsItem .newsTit{display: block; padding: 30px 0;}
+.topContent .news>ul .newsBox .newsItem .newsTit p{font-size: 2em;}
+.topContent .news>ul .newsBox .newsItem>p{font-size: 1.2em;}
+    
+    
+.btmContent .newsfeed{width: 90%; margin-left: 5%; padding: 100px 0;}
+.btmContent .newsfeed ul{min-height: 420px;}
+.btmContent .newsfeed ul li a{height: 200px;}
+.btmContent .newsfeed .feedRht li a{min-height: 415px;}
+    
+    
+/*  footerWrap  */
+#footerWrap{height: 250px;}
+.footerInner{width: auto; padding-top: 103.61px;}
+.footerInner .footerCt{width: 70%;}
+.footerInner .footerCt .footerLogo{width: 125px;}
+.footerInner .footerCt p{font-size: 1.35em; margin-top: 44.69px; margin-left: 10px;}
+.footerInner .footerSns{width: 30%; margin-top: 67.5px;}
+.footerInner .footerSns a{width: 44px; float: right; margin: 0; text-align: center;}
+.footerInner .footerSns a img{width: 70%;}
+    
+    
+/* 헤더 769~1200px */
+/* -----------------------------------------------------------*/
+@media screen and (max-width: 1200px){
+/*#headerWrap*/
+#headerWrap .headerInner{width: 75%; height: 90px; position: absolute; top:0; left: 16%;}
+#navigation{width: 100%; float: none;} 
+#menuRht{width: 100%; float: none; position: absolute; top:6px}
+#menuRht .iconMenu{font-size: .9em; margin: 0; overflow: hidden;}
+}
+    
+    
+/* 모바일 & 태블릿 320~768px */
+/*--------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+/*#headerWrap*/
+#mobile-nav{display: block}
+#navigation, #menuRht{display: none;}
+#headerWrap{width: 100%; height: 57px}
+#headerWrap #logo{width: 170px; height: 57px; margin-left: 20px; position: absolute; z-index: 300;}
+#headerWrap #logo a{width: 100%; height: 57px; margin: 0;}
+#headerWrap #logo a p{text-indent: 10px; font-size: 25px; line-height: 57px; font-weight: 100; color: #fff}
+#headerWrap #logo a img{height: 47px; margin-top: 5px;}
+#headerWrap .headerInner{width: 100%; height: 57px; position: absolute; top:0; left: 0;}
+    
+    
+/*#mainVideo*/
+#mainVideo .imgbox, #videoBG, .content {display: none;}
+#mainVideo {width: 100%; height: 380px;
+background: url('../images/bg/subscribebg.jpg') center center/cover no-repeat;}
+#mainVideo .pauseBtn{display: none;}
+ 
+    
+/*#surfBoards*/
+#surfBoards{padding-top: 35px;}
+#surfBoards .swiper-container{width: 100%; height: 280px;}
+#surfBoards .board768{display: none;}
+#surfBoards .board320{display: block;}
+    
+    
+/*board*/
+#boards{height: 260px; background: url(../images/bg/wavebg320.png) 0 0/cover no-repeat;}
+#boards ul{width: 100%; overflow: hidden; margin: 0 auto; padding: 40px 0 74px 0;}
+#boards ul li{float: left; width: 35%; margin-top: 35px; margin-right: 0;}
+#boards ul li:nth-child(2n-1){margin-left: 15%;}
+#boards ul li a{max-height: 40px;}
+#boards ul li a img{height: 100%;}
+#boards ul li a span{font-size: 5.6vw;}
+
+    
+/*about*/
+#about{width: 100%; height: 770px; background: #fff}
+#about .title{display: block; padding-top: 20px;}
+#about .aboutBox{width: 100%; height: 770px; overflow: hidden; padding:0;}
+.aboutBox ul{width: 95%; float: none; padding: 20px 0; margin-left: 2.5%; margin-top: 20px; -webkit-box-shadow: 3px 3px 19px -9px rgba(204,204,204,1);
+-moz-box-shadow: 3px 3px 19px -9px rgba(204,204,204,1);
+box-shadow: 3px 3px 19px -9px rgba(204,204,204,1);}
+.aboutBox ul li{width: 50%; height: 150px; float: right; margin-right: 5%;}
+.aboutBox ul li h3{font-size: 2em; line-height: 1em; margin-bottom: 15px; font-weight: normal;}
+.aboutBox ul li h3 a .arrow{width: .5em; height: .5em;}
+.aboutBox ul li p{display: block; font-size: 3vw; line-height: 1.3em;}
+.aboutBox ul .aboutImg{width: 36%; height: 150px; margin-right: 4%;}
+.aboutBox ul .aboutImg01 a{background: url(../images/customorg.jpg) center center / cover no-repeat;}
+.aboutBox ul .aboutImg02 a{background: url(../images/ecoorg.jpg) center center / cover no-repeat;}
+.aboutBox ul .aboutImg03 a{background: url(../images/builtorg.jpg) center center / cover no-repeat;}
+
+    
+/*#contents*/
+.topContent .customBoard{width: 100%; float: none; margin: 0; background: #efefef}
+.topContent .customBoard a p{display: none;}
+.topContent .customBoard a p:nth-child(2){display: block; font-size: 1.2em; line-height: 2em; letter-spacing: .3em; padding: 0; text-align: center;}
+.topContent .customBoard a p:nth-child(2){display: block; font-size: 1.2em; line-height: 2em; letter-spacing: .3em; padding: 0; text-align: center;}
+.topContent .customBoard a p i{line-height: 2em;}
+    
+    
+.topContent .video{display: none;}
+    
+.topContent .news{height: 500px; padding: 0}
+.topContent .news .newsTitle{display: block; text-align: center; font-size: 36px; color: #333; background-color: #fff; left:5%; top:30px}
+.topContent .news>ul .newsBox{display: none;}
+    .newsSlide {
+    width: 1000px;
+    height: 500px;
+    float: none;
+    position: absolute;
+    top: 0; left: 0;
+    }
+.newsSlide .swiper-wrapper{height: 320px;left: -350px; margin-top: 90px;}
+.newsSlide .swiper-wrapper .swiper-slide{width: auto; height: 320px;}
+.newsSlide .swiper-wrapper .newsImg a img{height: 100%;}
+.newsSlide .swiper-wrapper .newsImg a p{display: block; font-size: 1.2em; color: #333}
+    
+    
+
+.btmContent .newsfeed{display: none;}
+.btmContent .mailing{height: 140px; background: #fff;}
+.btmContent .mailing p{width: 298px; margin-top: 50px; background-color: #fff; color: #8a8a8a; font-size: 1.6em;}
+.btmContent .mailing form{width: 280px; padding: 10px;background-color: #7fd0da; border-radius: 5px;}
+.btmContent .mailing form .subsTxt{width: 170px;}
+.btmContent .mailing form .subsBtn{width: 80px;background: #6cbfc9; margin-left: 10px;}
+ 
+    
+/*  footerWrap  */
+#footerWrap{height: 420px; background: url(../images/bg/footerbgMobile.png) center/cover no-repeat;}
+.footerInner{width: auto; height: auto; margin: 0 auto; padding-top: 0; position: absolute; bottom: 40px}
+.footerInner .footerCt{margin: 0; padding: 0;}
+.footerInner .footerCt .footerLogo{display: none;}
+.footerInner .footerCt p{font-size: 5.4vw; margin: 9px 0 0 20px; line-height: 1.3em;} 
+.footerInner .footerSns{width: 88px;margin: 0;}
+.footerInner .footerSns a{height: 44px; margin:0; line-height: 44px}
+.footerInner .footerSns a img{width: 25px;}
+
+}
+

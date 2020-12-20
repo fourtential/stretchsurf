@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>stretchboards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+
+    <!-- 화면에 앱을 추가하면 페이지를 전체 화면으로 실행(애플)-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 파비콘-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- 웹 아이콘 설치 -->
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <!-- 로딩시 이미지 -->
+    <link rel="apple-touch-startup-image" href="loading.svg">
+
+    <!--    CSS    -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- mobile menu -->
+    <link rel="stylesheet" href="css/mobilemenu.css" media="screen">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!--  JS  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.js"></script>
+
+    <!-- language menu -->
+    <script src="js/select.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper.min.js"></script>
+    <!-- mobile menu -->
+    <script src="js/mobilemenu.js"></script>
+    <!--  prefixfree js (별도 설명-필수)-->
+    <script src="js/prefixfree.min.js"></script>
+    <!--이미지 사이즈 조절, 이미지 변경, top scroll-->
+    <script src="js/move.js"></script>
+    <script src="js/news.js"></script>
+    <!-- 모바일웹에서 주소창 사라지기 -->
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function() {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) {}
+        // ]]>
+
+    </script>
+
+    <!--IE 하위 호환성(필수) -->
+    <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="headerWrap">
+            <h1 id="logo"><a href="index.html"><img src="images/symbol.png" alt="">
+                    <p>stretchboards</p>
+                </a></h1>
+            <div class="headerInner">
+                <div id="navigation">
+                    <nav id="gnb">
+                        <ul class="mainMenu">
+                            <li class="depth01 menu01"><a href="#">ABOUT</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">Stretch History</a></li>
+                                    <li class="subMenu"><a href="#">Design Philosophy</a></li>
+                                    <li class="subMenu"><a href="#">Surfboard Construction</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth01 menu02"><a href="#">BOARDS</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">Surfboards</a></li>
+                                    <li class="subMenu"><a href="#">Towins</a></li>
+                                    <li class="subMenu"><a href="#">Kiteboards</a></li>
+                                    <li class="subMenu"><a href="#">Wakesurf</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth01 menu03"><a href="#">NEWS</a></li>
+                            <li class="depth01 menu04"><a href="#">TEAM</a></li>
+                            <li class="depth01 menu05"><a href="#">CONTACT</a>
+                                <ul class="depth02">
+                                    <li class="subMenu"><a href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="mobile-nav">
+                    <div class="menu-button"><i class="fa fa-bars"></i></div>
+                    <ul>
+                        <li class="parent">
+                            <a href="#">ABOUT</a>
+                            <ul>
+                                <li><a href="#">Stretch History</a></li>
+                                <li><a href="#">Design Philosophy</a></li>
+                                <li><a href="#">Surfboard Construction</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent">
+                            <a href="#">BOARDS</a>
+                            <ul>
+                                <li><a href="#">Surfboards</a></li>
+                                <li><a href="#">Towins</a></li>
+                                <li><a href="#">Kiteboards</a></li>
+                                <li><a href="#">Wakesurf</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li class="parent">
+                            <a href="#">CONTACT</a>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="menuRht">
+                    <ul class="iconMenu">
+                        <li class="language">
+                            <a class="usa" href="javascript:void(0);"><img src="images/icon/flags.svg" alt="flags icon">USA</a>
+                            <ul class="langList">
+                                <li><a href="#">Brazil</a></li>
+                                <li><a href="#">Japan</a></li>
+                                <li><a href="#">France</a></li>
+                                <li><a href="#">EU</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="images/icon/shop.svg" alt="store icon">STORE</a></li>
+                        <li><a href="#"><img src="images/icon/pin.svg" alt="pin icon">WHERE TO BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section id="mainVideo">
+            <h2 class="hidden">stretchboards video</h2>
+            <div class="imgbox">
+                <img class="videologo" src="images/textlogo.png" alt="stretchboards logo"></div>
+            <video poster="images/poster.png" autoplay muted loop id="videoBG">
+                <source src="video/mainVideo.mp4" type="video/mp4">
+            </video>
+            <div class="pauseBtn">
+                <button id="pause" onclick="myFunction()">Pause</button>
+            </div>
+        </section>
+        <section id="surfBoards">
+            <h2 class="title">surfboards</h2>
+            <div class="swiper-container board1280">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/board/gbuzz-stock-top.png" alt="surfboard gbuzz-stock">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzzsaw-butt-top.png" alt="surfboard buzzsaw-butt">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/2x4-rp-purple-top.png" alt="surfboard 2x4-rp-purple">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/mr-buzz-sk8-top.png" alt="surfboard mr-buzz-sk8">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-rp-convertible-yellow-top.png" alt="surfboard sword-rp-convertible-yellow">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-red-top.png" alt="surfboard sword-red">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzzsaw-sk8-stain-dip-top.png" alt="surfboard buzzsaw-sk8-stain-dip">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/comp-gun-2019-top.png" alt="surfboard comp-gun-2019">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzz-gun-convertible-top.png" alt="surfboard buzz-gun-convertible">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-swallow-convertible-top.png" alt="surfboard sword-swallow-convertible">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/2x4-step-up-top.png" alt="surfboard 2x4-step-up">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/classic-longboard-top.png" alt="surfboard classic-longboard">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-container board768">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/board/gbuzz-stock-top.png" alt="surfboard gbuzz-stock">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzzsaw-butt-top.png" alt="surfboard buzzsaw-butt">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/2x4-rp-purple-top.png" alt="surfboard 2x4-rp-purple">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/mr-buzz-sk8-top.png" alt="surfboard mr-buzz-sk8">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-rp-convertible-yellow-top.png" alt="surfboard sword-rp-convertible-yellow">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-red-top.png" alt="surfboard sword-red">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzzsaw-sk8-stain-dip-top.png" alt="surfboard buzzsaw-sk8-stain-dip">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/comp-gun-2019-top.png" alt="surfboard comp-gun-2019">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzz-gun-convertible-top.png" alt="surfboard buzz-gun-convertible">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-swallow-convertible-top.png" alt="surfboard sword-swallow-convertible">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/2x4-step-up-top.png" alt="surfboard 2x4-step-up">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/classic-longboard-top.png" alt="surfboard classic-longboard">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-container board320">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/board/gbuzz-stock-top.png" alt="surfboard gbuzz-stock">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzzsaw-butt-top.png" alt="surfboard buzzsaw-butt">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/2x4-rp-purple-top.png" alt="surfboard 2x4-rp-purple">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/mr-buzz-sk8-top.png" alt="surfboard mr-buzz-sk8">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-rp-convertible-yellow-top.png" alt="surfboard sword-rp-convertible-yellow">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-red-top.png" alt="surfboard sword-red">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzzsaw-sk8-stain-dip-top.png" alt="surfboard buzzsaw-sk8-stain-dip">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/comp-gun-2019-top.png" alt="surfboard comp-gun-2019">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/buzz-gun-convertible-top.png" alt="surfboard buzz-gun-convertible">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/sword-swallow-convertible-top.png" alt="surfboard sword-swallow-convertible">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/2x4-step-up-top.png" alt="surfboard 2x4-step-up">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/board/classic-longboard-top.png" alt="surfboard classic-longboard">
+                            <p><span>perfomance</span><span>mr.buzz</span><span>$140</span></p>
+                        </a></div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="boards">
+            <h2 class="hidden">boards list</h2>
+            <ul>
+                <li><a href="#"><img src="images/icon/tow.png" alt="tows"><span>tows</span></a></li>
+                <li><a href="#"><img src="images/icon/kite.png" alt="kiteboards"><span>kiteboards</span></a></li>
+                <li><a href="#"><img src="images/icon/wake.png" alt="wakesurf"><span>wakesurf</span></a></li>
+                <li><a href="#"><img src="images/icon/sups.png" alt="SUPS"><span>SUPS</span></a></li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2 class="title">about</h2>
+            <div class="aboutBox">
+                <ul>
+                    <li class="aboutCustom">
+                        <h3><a href="#">CUSTOM DESIGN<span class="arrow"></span></a></h3>
+                        <p>Stretch has mastered
+                            EPS/Epoxy board building
+                            for over 30 years.</p>
+                    </li>
+                    <li class="aboutImg aboutImg01"><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <li class="aboutEco">
+                        <h3><a href="#">ECO FRIENDLY<span class="arrow"></span></a></h3>
+                        <p>Learn more about
+                            techniques that reduce
+                            environment impact.</p>
+                    </li>
+                    <li class="aboutImg aboutImg02"><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <li class="aboutBuilt">
+                        <h3><a href="#">BUILT TO LAST<span class="arrow"></span></a></h3>
+                        <p>We use only the highest
+                            quality materials to build boards
+                            that stand the test of time.</p>
+                    </li>
+                    <li class="aboutImg aboutImg03"><a href="#"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contents">
+            <h2 class="hidden">contents</h2>
+            <div class="topContent">
+                <article class="video">
+                    <h3 class="hidden">video</h3>
+                    <div class="videoBox">
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/275573542?autoplay=0&loop=1&color=7fd0da&byline=0&portrait=0&#t=1m5s&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                        <span class="videoTitle">video</span>
+                    </div>
+                </article>
+                <div class="customBoard"><a href="#">
+                        <p>CUSTOM<br>SURFBOARDS<br>STARTING<br>AT $750<span class="arrow"></span></p>
+                        <p><i class="fas fa-wrench"></i> CUSTOM SURFBOARDS STARTING AT $750</p>
+                    </a>
+                </div>
+                <article class="news">
+                    <!--                    <script src="js/news.js"></script>-->
+                    <h3 class="newsTitle">news</h3>
+                    <ul>
+                        <li class="newsBox">
+                            <div class="newsItem newsActive">
+                                <a class="newsTit" href="#">
+                                    <p>Eimeo Czermak’s New Edit “Bloom”<span class="arrow"></span></p>
+                                </a>
+                                <p>Team rider Eimeo Czermak starts 2020 off with a coming of age re-cap highlighting his past year back home in Tahiti and his time training on the North Shore of Hawaii.To those who have seen his progression over the past 3 years its no secret…<span>2020.01.20</span></p>
+                            </div>
+                            <div class="newsItem">
+                                <a class="newsTit" href="#">
+                                    <p>WINTER IS COMING – WILLIAM ALIOTTI’S NEW EDIT<span class="arrow"></span></p>
+                                </a>
+                                <p>Hey Nic! How is it being back home prepping for the upcoming big wave season?
+                                    “Yo Yo! The Boys! I feel like during winter time its a hassle here in euprope running around, cold water, heavy beatings”
+                                    Happy to trade in the big boards and wetsuits for some warm water barrels?
+                                    <span>2020.01.21</span></p>
+                            </div>
+                            <div class="newsItem">
+                                <a class="newsTit" href="#">
+                                    <p>William Aliotti’s Film “NEW RELIGION”<span class="arrow"></span></p>
+                                </a>
+                                <p>William Aliotti is proud to release his first movie “New Religion” by Manuel Claudeville Morell. Over the past year these two have traveled far and wide to give you something special under 15 minutes. This movie represents both surfer and filmmaker in the artistic direction both William and Manuel had envisioned.<span>2020.01.22</span></p>
+                            </div>
+                            <div class="newsItem">
+                                <a class="newsTit" href="#">
+                                    <p>The 2×4 is the Ultimate Travel Board<span class="arrow"></span></p>
+                                </a>
+                                <p>“The 2×4 will increase your top speed, no doubt about that. There is a particular flex that you get when you are projecting down the line. A sensation that I obsess about” – @noamizuno
+                                    ‘If you know, then you know’ is basically how word gets around about our 2×4 model.<span>2020.01.20</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="newsSlide">
+                        <ul class="swiper-wrapper">
+                            <li class="newsImg swiper-slide"><a href="javascript:fnBoxView(0);"><img src="images/news01.png" alt="news about Eimeo Czermak">
+                                    <p>Eimeo Czermak’s New Edit “Bloom”</p>
+                                </a></li>
+                            <li class="newsImg swiper-slide"><a href="javascript:fnBoxView(1);"><img src="images/news02.jpg" alt="news about William Aliotti">
+                                    <p>WINTER IS COMING – WILLIAM ALIOTTI’S NEW EDIT</p>
+                                </a></li>
+                            <li class="newsImg swiper-slide"><a href="javascript:fnBoxView(2);"><img src="images/news03.jpg" alt="news about William Aliotti">
+                                    <p>William Aliotti’s Film “NEW RELIGION”</p>
+                                </a></li>
+                            <li class="newsImg swiper-slide"><a href="javascript:fnBoxView(3);"><img src="images/news04.jpg" alt="news about 2×4 board">
+                                    <p>The 2×4 is the Ultimate Travel Board</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="btmContent">
+                <div class="mailing">
+                    <h3 class="hidden">subscribe</h3>
+                    <p>sign up to our mailing list</p>
+                    <form action="">
+                        <input class="subsTxt" type="text" name="email" value="Your email">
+                        <input class="subsBtn" type="submit" value="subscribe">
+                    </form>
+                </div>
+                <div class="newsfeed">
+                    <ul class="feedLft">
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">instagram</a></li>
+                    </ul>
+                    <ul class="feedRht">
+                        <li><a href="#">instagram</a></li>
+                    </ul>
+                    <p>Follow @stretchboards on Instagram</p>
+                </div>
+            </div>
+        </section>
+        <footer id="footerWrap">
+            <div class="footerInner">
+                <div class="footerCt">
+                    <h4 class="footerLogo"><a href="#"><img src="images/logo.png" alt="Stretch Boards logo"></a></h4>
+                    <p>© Copyright 2018 Stretch Boards<br>
+                        983 Tower Place Santa Cruz, California 95062</p>
+                </div>
+                <div class="footerSns">
+                    <a href="https://www.facebook.com/stretchboards" target="_blank"><img src="images/icon/facebook.png" alt="stretchboards facebook"></a>
+                    <a href="https://www.youtube.com/user/stretchboards" target="_blank"><img src="images/icon/youtube.png" alt="stretchboards youtube"></a>
+                    <a href="https://vimeo.com/stretchboards" target="_blank"><img src="images/icon/vimeo.png" alt="stretchboards vimeo"></a>
+                    <a href="https://www.instagram.com/stretchboards/" target="_blank"><img src="images/icon/instagram.png" alt="stretchboards instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- video pause button -->
+    <script>
+        // Get the video
+        var video = document.getElementById("videoBG");
+
+        // Get the button
+        var btn = document.getElementById("pause");
+
+        // Pause and play the video, and change the button text
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.board1280', {
+            slidesPerView: 7,
+            spaceBetween: 5,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                mousewheel: true,
+                keyboard: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+        });
+
+    </script>
+    <script>
+        var swiper = new Swiper('.board768', {
+            slidesPerView: 5,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                mousewheel: true,
+                keyboard: true
+            },
+        });
+
+    </script>
+    <script>
+        var swiper = new Swiper('.board320', {
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                mousewheel: true,
+                keyboard: true
+            },
+        });
+
+    </script>
+
+    <script>
+        var swiper = new Swiper('.newsSlide', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+    
+    <!-- newsBox script -->
+    <script>
+        function fnBoxView(num) {
+            $(".newsBox div").removeClass("newsActive");
+            $(".newsBox div").eq(num).addClass("newsActive");
+        }
+
+    </script>
+</body>
+
+</html>
