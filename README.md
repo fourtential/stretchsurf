@@ -7,8 +7,7 @@
 
 #### preview
 ## Stretch Boards
-<img src="https://user-images.githubusercontent.com/76391940/103147659-d7716280-479a-11eb-9daf-137692eccd01.jpg" width=720px>
+<img src="https://user-images.githubusercontent.com/76391940/103147871-7480cb00-479c-11eb-89c2-8fd36ae1698b.jpg" width=720px>
 
 ___
 ### 웹퍼블리셔 김민진의 포트폴리오입니다.
-
